@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/CSS/style.css" />
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link for JS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a class="logo-brand" href="#">UpConstruction <span>.</span></a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="active">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                >DROP DOWN <i class="fa-solid fa-chevron-down"></i>
+                <ul class="dropdown">
+                  <li class="dropdown-item">Dropdown-1</li>
+                  <li class="dropdown-item">Dropdown-Deep <i class="fa-solid fa-chevron-down"></i>
+                  </li>
+                  <li class="dropdown-item">Dropdown-2</li>
+                  <li class="dropdown-item">Dropdown-3</li>
+                  <li class="dropdown-item">Dropdown-4</li>
+                </ul>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">CONTACT</a>
+            </li>
+          </ul>
+          <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="content">
+          <h1>Welcome to<br />UpConstruction</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            magni facere quisquam praesentium eum id deserunt inventore itaque
+            quod! Natus officiis consequatur possimus quaerat beatae commodi,
+            magni corrupti deserunt, suscipit autem at doloribus nihil
+            reiciendis
+          </p>
+          <a class="btn" href="#">Get Started</a>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hero-carousel/hero-carousel-1.jpg"
+                alt="Slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hero-carousel/hero-carousel-2.jpg"
+                alt="Slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hero-carousel/hero-carousel-3.jpg"
+                alt="Slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hero-carousel/hero-carousel-4.jpg"
+                alt="Slide"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/img/hero-carousel/hero-carousel-5.jpg"
+                alt="Slide"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      autoplay: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
