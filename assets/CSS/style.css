@@ -46,7 +46,7 @@ a {
   position: absolute;
   bottom: 10px;
 }
-.nav-list .nav-item .nav-link .dropdown{
+.nav-list .nav-item .nav-link .dropdown {
   width: 250px;
   color: black;
   position: absolute;
@@ -56,12 +56,12 @@ a {
   background-color: white;
   display: none;
 }
-.nav-list .nav-item .nav-link .dropdown .dropdown-item{
+.nav-list .nav-item .nav-link .dropdown .dropdown-item {
   text-align: start;
   padding-left: 20px;
   padding-block: 15px;
 }
-.nav-list .nav-item .nav-link .dropdown .dropdown-item:hover{
+.nav-list .nav-item .nav-link .dropdown .dropdown-item:hover {
   color: rgb(243, 243, 89);
   transition: 0.3s;
 }
@@ -77,6 +77,12 @@ header .navbar .btn-menu {
   display: none;
   cursor: pointer;
 }
+input {
+  display: none;
+}
+.cancel{
+  margin-left: 20px;
+}
 header .navbar .logo-brand {
   font-size: 30px;
 }
@@ -89,11 +95,11 @@ header .navbar .logo-brand span {
   overflow: hidden;
   color: rgb(207, 199, 199);
 }
-.nav-list .nav-item .nav-link:hover{
+.nav-list .nav-item .nav-link:hover {
   color: white;
   transition: 0.3s;
 }
-.nav-list .nav-item .nav-link:hover .dropdown{
+.nav-list .nav-item .nav-link:hover .dropdown {
   display: block;
   top: 60px;
   transition: 0.5s;
@@ -196,10 +202,37 @@ main {
   transition: 0.5s;
 }
 @media (max-width: 1080px) {
+  .navbar {
+    padding: 0;
+  }
   header .navbar .nav-list {
     display: none;
+    width: 400px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.829);
+    right: 0;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    padding-top: 30px;
+  }
+  header .navbar .nav-list .cancel{
+    position: absolute;
+    right: 15px;
+    color: white;
   }
   header .navbar .btn-menu {
     display: block;
   }
+  header .navbar .logo-brand,
+  header .navbar .btn-menu {
+    margin-inline: 20px;
+    margin-top: 20px;
+  }
+  .active::before {
+    display: none;
+  }
+  input:checked ~ .nav-list{
+  display: block;
+}
 }
